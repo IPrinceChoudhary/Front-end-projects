@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 3.8rem;
+    background: black;
+    opacity: 0.85;
+    position: sticky;
+    top: 0;
+    
+}
+
+.logo{
+    width: 5%;
+    margin: 1rem 2rem;
+}
+
+.logo img{
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.list{
+    display: flex;
+    
+    
+}
+
+.item{
+    list-style: none;
+    padding: 0rem 1.5rem;
+}
+
+.item a{
+    display: block;
+    text-decoration: none;
+    /* padding: 0rem 1.5rem; */
+    font-size: 1.1rem;
+    color: white;
+}
+
+.item a:hover{
+    border-bottom: 1px solid grey;
+    color: grey
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 23rem;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("../project4.img/bg1.jpg");
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h-primary{
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#home h1,
+#home p{
+    color: black;
+}
+
+#home p{
+    font-size: 1.1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.btn{
+    display: flex;
+    padding: 5px 1.5rem;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: black;
+    margin: 7px auto;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+#services{
+    margin: 6rem 3rem;
+}
+
+#services h1{
+    margin-bottom: 2rem;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.services-box{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 20px;
+    margin: 0px 7px;
+    border: 2px solid rgb(199, 0, 0);
+    border-radius: 1rem;
+    background: rgb(255, 223, 223);
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.services-box img{
+    width: 40%;
+    height: 8rem;
+    border-radius: 1rem;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h2{
+    margin: 5px;
+    font-size: 26px;
+    font-family: monospace;
+}
+
+.content p{
+    margin-bottom: 4px;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+#client-section{
+    padding: 1rem;
+    background: rgb(255, 247, 247);
+}
+
+#client-section h1{
+    margin-bottom: 1.6rem;
+}
+
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+    
+}
+
+.client-items{
+    /* padding: 1rem; */
+    margin: auto;
+    /* border: 2px solid red; */
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.459);
+    /* border-radius: 1rem; */
+}
+
+.client-items img{
+    max-width: 10rem;
+    height: 9rem;
+    background-size: cover;
+    /* border: 2px solid black; */
+    /* border-radius: 1rem; */
+    cursor: pointer;
+    margin-bottom: -4px;
+}
+
+
+
+
+#contact{
+    position: relative;
+    margin-top: 5rem;
+}
+
+#contact h1{
+    padding: 1rem;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+    background: url(../project4.img/bgcontact.jpg) no-repeat center center/cover;
+    
+}
+
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    width: 80%;
+    margin: auto;
+}
+
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    /* display: inline; */
+    padding: 0.5rem;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 14px;
+}
+
+.contact-box textarea{
+    font-family: sans-serif;
+    
+}
+
+
+
+
+.footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+
+form{
+    width: 60%;
+}
+
+label{
+    font-size: 1.2rem;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#contact button{
+    padding: 4px 16px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1000px){
+
+    .logo img{
+        width: 90%;
+    }
+
+    .clients{
+        flex-wrap: wrap;
+        
+        max-width: 100%;
+    }
+
+    .services-container{
+        flex-direction: column;
+        
+    }
+    .services-box{
+        width: 75%;
+        margin-bottom: 3rem;
+        
+    }
+    .services-box img{
+        height: 8rem;
+    }
+
+    .h-primary{
+        font-size: 32px;
+    }
+
+    .home-content{
+        width: 90%;
+        
+    }
+
+    #home p{
+        text-align: left;
+        padding: 2px;
+    }
+
+    #services{
+        margin-bottom: -1px;
+    }
+
+}
+
+@media only screen and (max-width:750px){
+    .client-items img{
+        max-width: 8rem;
+        height: 7rem;
+    }
+    
+    form{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    #navbar{
+        flex-direction: column;
+        height: 4.8rem;
+        opacity: .8;
+    }
+
+    .logo{
+        margin: 3px 0rem;
+    }
+
+    .logo img{
+        width: 100%;
+    }
+
+    #client-section{
+        padding: 2px;
+    }
+
+    .client-items{
+        margin: 1rem 1.5rem;
+    }
+
+    .client-items img{
+        max-width: 8rem;
+        height: 8rem;
+    }
+
+    .item{
+        padding: 0rem 1rem;
+    }
+
+    .item a{
+        font-size: 1.4rem;
+    }
+    
+    form{
+        width: 90%;
+    }
+
+    .footer{
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    #client-section h1{
+        margin-top: 3rem;
+        
+    }
+
+    #services h1{
+        margin-top: 9rem;
+    }
+
+    .h-primary{
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .services-box{
+        width: 100%;
+    }
+
+    #home h1{
+        font-size: 1.6rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-bottom: 3px;
+    }
+
+    #home p{
+        font-size: 15px;
+    }
+
+    .logo img{
+        width: 120%;
+    }
+
+    .item a{
+        font-size: 22px;
+    }
+
+    li.item{
+        padding: 2px 20px;
+    }
+}
+
+@media only screen and (max-width:452px){
+    li.item{
+        padding: 2px 15px;
+    }
+
+    .item a{
+        font-size: 18px;
+    }
+
+    .logo img{
+        width: 140%;
+    }
+
+}
